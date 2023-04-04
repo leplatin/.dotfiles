@@ -1,0 +1,7 @@
+Sxiv.background: #24273A
+Sxiv.foreground: #CAD3F5
+
+! After modifying .Xresources you will have to update the xrdb by running the following command:
+! xrdb -load ~/.Xresources
+! however this should also work too:
+! xrdb -load OR xrdb
