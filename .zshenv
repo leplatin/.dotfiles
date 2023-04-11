@@ -1,5 +1,5 @@
  # default apps
-export TERM=xterm-256color 
+export TERM="alacritty" 
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
