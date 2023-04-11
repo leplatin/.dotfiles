@@ -20,9 +20,16 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
+export INPUTRC="$HOME/.config/inputrc"
+
+export XAUTHORITY="/run/user/1000/Xauthority"
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export XCURSOR_PATH=/usr/share/icons:${XDG_DATA_HOME}/icons
+
+export HISTFILE="$XDG_STATE_HOME"/bash/history
 
 export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 #export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 #export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
@@ -40,7 +47,14 @@ export MBSYNCRC="${XDG_CONFIG_HOME:-$HOME/.config}/mbsync/config"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
+
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export npm_config_cache=$XDG_CACHE_HOME/npm
+# if you do this one, make sure to add $XDG_DATA_HOME/npm/bin to the $PATH,
+# otherwise global installed executables won't be accessible on the cli.
+export npm_config_prefix=$XDG_DATA_HOME/npm
+export PATH=$PATH:$XDG_DATA_HOME/npm/bin
+
 export N_PREFIX="$HOME/.local/bin/n"
 export ZDOTDIR="$HOME/.config/zsh"
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel

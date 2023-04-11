@@ -1,3 +1,5 @@
+--local Util = require("lazyvim.util")
+
 return {
 	"nvim-telescope/telescope.nvim",
 	event = "BufReadPre",
@@ -9,6 +11,7 @@ return {
 
 		{ "<C-M-o>", "<cmd>lua require('telescope.builtin').find_files()<cr>" },
 		{	"<C-M-p>", "<cmd>lua require('telescope.builtin').builtin(require('telescope.themes').get_dropdown({}))<cr>",	},
+    --{ "<leader>uC", Util.telescope("colorscheme", { enable_preview = true }), desc = "Colorscheme with preview" },
 		{ "<C-g>", "<cmd>lua require('telescope.builtin').live_grep()<cr>" },
 		{ "<C-f>", "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>" },
     { "<leader>ff", "<cmd>Telescope find_files<cr>" }, -- find files within current working directory, respects .gitignore

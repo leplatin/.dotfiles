@@ -7,6 +7,15 @@ return {
       filetype_exclude = { "help", "alpha", "dashboard", "neo-tree", "Trouble", "lazy" },
       show_trailing_blankline_indent = false,
       show_current_context = false,
+      filetype_exclude = {
+			"coc-explorer",
+			"dashboard",
+			"floaterm",
+			"alpha",
+			"help",
+			"packer",
+			"NvimTree",
+		 },
     },
   },
   {
