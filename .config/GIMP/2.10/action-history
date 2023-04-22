@@ -1,0 +1,12 @@
+# GIMP action-history
+
+(history-item "filters-exposure" 1)
+(history-item "file-open" 0)
+(history-item "dialogs-preferences" 0)
+(history-item "filters-color-balance" 0)
+(history-item "filters-brightness-contrast" 0)
+(history-item "filters-levels" 0)
+(history-item "windows-tab-position" 0)
+(history-item "dialogs-channels" 1)
+
+# end of action-history
