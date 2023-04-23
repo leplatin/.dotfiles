@@ -1,9 +1,0 @@
-#!/bin/sh
-
-#transmission-daemon
-transmission-daemon --no-auth &
-
-# disable x-shaped cursor in bspwm
-/bin/xsetroot -cursor_name left_ptr
-
-exec bspwm
